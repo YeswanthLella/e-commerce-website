@@ -1,8 +1,9 @@
-import './header.css'
+import { Header } from '../Components/Header';
 import './Orderspage.css'
 export function Orders(){
     return(
         <>
+        <Header />
           <div className="header">
       <div className="left-section">
         <a href="/" className="header-link">
