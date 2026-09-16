@@ -8,6 +8,7 @@ function App() {
     <Routes>
       <Route index element={<Homepage />}/>
       <Route path="checkout" element={<Checkoutpage />}/> 
+      
     </Routes>
     
   )
