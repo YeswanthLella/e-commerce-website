@@ -1,13 +1,12 @@
+import axios from 'axios';
 import { Header } from '../Components/Header';
 import './Homepage.css'
 import {products} from '../../Starting-code//data/products'
 export function Homepage(){
-fetch('http://localhost:3000/api/products')
+axios.get('http://localhost:3000/api/products')
   .then((response)=>{
-        return response.json();
-  }).then((data)=>{
-          console.log(data);
-        });
+    console.log(response.data);
+  });
 
 
     return( 
